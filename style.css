@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("fontes/DMsans.ttf") format("truetype");
+}
+
+
+:root {
+  --roxo: hsl(256, 67%, 59%);
+  --roxo-claro: hsl(254, 88%, 90%);
+  --amarelo: hsl(39, 100%, 71%);
+  --amarelo-claro: hsl(31, 66%, 93%);
+}
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: "DM Sans";
+   background-color: #f1edef;
+   padding: 5px;
+ }
+ 
+ .item {
+   margin: 15px 10px;
+   border-radius: 10px;
+ }
+ 
+ .item > p {
+   font-size: 18px;
+ }
+ 
+ .item > img {
+   display: block;
+ }
+ 
+ #social-media {
+   background-color: var(--roxo);
+   padding: 25px;
+   color: white;
+   text-align: center;
+   font-size: 2em;
+ }
+ 
+ #social-media > img {
+   width: 200px;
+   height: 33px;
+   margin: auto;
+   margin-top: 15px;
+ }
+ 
+ #social-media > h1 {
+   font-size: 1.5em;
+ }
+ 
+ #accounts {
+   background-color: white;
+   padding: 10px;
+ }
+ 
+ #accounts > img {
+   width: 100%;
+   margin-bottom: 10px;
+ }
+ 
+ #accounts > h2 {
+   font-size: 2em;
+ }
+ 
+ #consistent {
+   background-color: var(--amarelo);
+   padding: 15px 15px 0px 15px;
+   max-height: 330px;
+   display: grid;
+   align-content: space-between;
+ }
+ 
+ #consistent > img {
+   width: 65%;
+   margin-top: 10px;
+ }
+ 
+ #schedule {
+   background-color: var(--roxo-claro);
+   text-align: center;
+   padding: 15px 5px;
+ }
+ 
+ #schedule > img {
+   width: 100%;
+   padding: 20px;
+ }
+ 
+ #grow {
+   background-color: var(--roxo);
+   padding: 10px;
+   color: white;
+   text-align: center;
+ }
+ 
+ #grow > img {
+   width: 250px;
+   height: 230px;
+   margin: 20px auto;
+ }
+ 
+ #audience {
+   background-color: white;
+   padding: 15px;
+ }
+ 
+ #audience > img {
+   width: 200px;
+   height: 74px;
+   margin-top: 15px;
+ }
+ 
+ #create {
+   background-color: var(--amarelo-claro);
+   padding: 20px;
+ }
+ 
+ #create > img {
+   width: 200px;
+   height: 95px;
+   margin: 15px;
+ }
+ 
+ #write {
+   background-color: var(--amarelo);
+   padding: 20px;
+ }
+ 
+ #write > img {
+   width: 250px;
+   height: 253px;
+   margin-top: 15px;
+ }
+ 
+ @media screen and (min-width: 600px){
+   
+   #bento {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+   }
+   
+   #grow {
+     grid-row-start: 2;
+   }
+   
+   #write {
+     grid-row-start: 3;
+   }
+   
+ }
+ 
+ @media screen and (min-width: 1200px) {
+   
+   #bento {
+     margin: 50px;
+     grid-template: 1fr 1fr auto auto/ repeat(4, 1fr);
+     grid-template-areas:
+     "create social-media social-media schedule"
+     "create accounts consistent schedule"
+     "write audience grow grow"
+     "write . . .";
+   }
+   
+   #social-media {
+     grid-area: social-media;
+     font-size: 2.8em;
+   }
+   
+   #accounts {
+     grid-area: accounts;
+   }
+   
+   #consistent {
+     grid-area: consistent;
+     font-size: 1.3em;
+   }
+   
+   #schedule {
+     grid-area: schedule;
+     font-size: 1.5em;
+     padding: 20px;
+     text-align: left;
+   }
+   
+   #schedule > img {
+     padding: 20px 0;
+   }
+   
+   #grow {
+     font-size: 1.8em;
+     padding: 15px;
+     grid-area: grow;
+     display: grid;
+     grid-auto-flow: column;
+     align-items: center;
+   }
+
+   #audience {
+     grid-area: audience;
+     font-size: 2.5em;
+   }
+   
+   #create {
+     grid-area: create;
+     padding: 50px 20px;
+   }
+   
+   #create > h2 {
+     font-size: 2.8em;
+   }
+   
+   #create > img {
+     margin: 15px auto;
+   }
+   
+   #write {
+     grid-area: write;
+   }
+   
+   #write > h2 {
+     font-size: 2.5em;
+   }
+   
+ }
