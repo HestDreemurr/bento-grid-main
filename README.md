@@ -19,10 +19,10 @@
 # 🎨 Design
 <h2>Cores</h2>
 <p>
-  <strong style="background-color: hsl(256, 67%, 59%);">Roxo</strong>: hsl(256, 67%, 59%)<br>
-  <strong style="background-color: hsl(254, 88%, 90%); color: black;">Roxo Claro</strong>: hsl(254, 88%, 90%)<br>
-  <strong style="background-color: hsl(39, 100%, 71%); color: black;">Amarelo</strong>: hsl(39, 100%, 71%)<br>
-  <strong style="background-color: hsl(31, 66%, 93%); color: black;">Amarelo Claro</strong>: hsl(31, 66%, 93%)<br>
+  <strong>Roxo</strong>: hsl(256, 67%, 59%)<br>
+  <strong>Roxo Claro</strong>: hsl(254, 88%, 90%)<br>
+  <strong>Amarelo</strong>: hsl(39, 100%, 71%)<br>
+  <strong>Amarelo Claro</strong>: hsl(31, 66%, 93%)<br>
 </p>
 
 <h2>Fonte</h2>
